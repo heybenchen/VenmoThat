@@ -20,7 +20,7 @@ import idea.spark.ocr.camera.CameraManager;
 
 import java.util.List;
 
-import edu.sfsu.cs.orange.ocr.R;
+import idea.spark.ocr.R;
 
 import android.content.Context;
 import android.content.res.Resources;

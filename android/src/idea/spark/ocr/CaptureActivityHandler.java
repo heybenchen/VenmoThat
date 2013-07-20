@@ -16,11 +16,7 @@
  */
 package idea.spark.ocr;
 
-import idea.spark.ocr.CaptureActivity;
-import idea.spark.ocr.OcrResult;
 import idea.spark.ocr.camera.CameraManager;
-import edu.sfsu.cs.orange.ocr.R;
-
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;

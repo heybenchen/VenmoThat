@@ -19,7 +19,7 @@ package idea.spark.ocr;
 import idea.spark.ocr.language.LanguageCodeHelper;
 import idea.spark.ocr.language.TranslatorBing;
 import idea.spark.ocr.language.TranslatorGoogle;
-import edu.sfsu.cs.orange.ocr.R;
+import idea.spark.ocr.R;
 
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;

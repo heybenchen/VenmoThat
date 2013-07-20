@@ -19,7 +19,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.util.Log;
 
-import edu.sfsu.cs.orange.ocr.R;
+import idea.spark.ocr.R;
 
 /**
  * Class for handling functions relating to converting between standard language

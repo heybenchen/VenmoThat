@@ -16,7 +16,7 @@
 package idea.spark.ocr.language;
 
 import idea.spark.ocr.CaptureActivity;
-import edu.sfsu.cs.orange.ocr.R;
+import idea.spark.ocr.R;
 
 import android.graphics.Typeface;
 import android.os.AsyncTask;

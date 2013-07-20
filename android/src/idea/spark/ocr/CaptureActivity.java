@@ -18,9 +18,13 @@
 package idea.spark.ocr;
 
 
-import com.googlecode.tesseract.android.TessBaseAPI;
+import idea.spark.ocr.camera.CameraManager;
+import idea.spark.ocr.camera.ShutterButton;
+import idea.spark.ocr.language.LanguageCodeHelper;
+import idea.spark.ocr.language.TranslateAsyncTask;
 
-import edu.sfsu.cs.orange.ocr.R;
+import java.io.File;
+import java.io.IOException;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -47,6 +51,7 @@ import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -57,22 +62,11 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import idea.spark.ocr.BeepManager;
-import idea.spark.ocr.HelpActivity;
-import idea.spark.ocr.OcrResult;
-import idea.spark.ocr.PreferencesActivity;
-import idea.spark.ocr.camera.CameraManager;
-import idea.spark.ocr.camera.ShutterButton;
-import idea.spark.ocr.language.LanguageCodeHelper;
-import idea.spark.ocr.language.TranslateAsyncTask;
-
-import java.io.File;
-import java.io.IOException;
+import com.googlecode.tesseract.android.TessBaseAPI;
 
 /**
  * This activity opens the camera and does the actual scanning on a background thread. It draws a
